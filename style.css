@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #AFEEEE;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 50px 0;
+}
+
+.contenedor_imagen {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.30);
+}
+
+.contenedor_imagen img {
+    border-radius: 20px;
+}
+
+.contenedor_resultado {
+    width: 400px;
+    padding: 10px 20px;
+
+}
+
+.imprime_texto label {
+    color: #fd2c0c;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+#resultado {
+    word-wrap: break-word;
+    margin: 10px 5px;
+    padding: 10px 5px;
+}
+
+
+/* ------------------------------ */
+.boton_copy {
+    text-align: center;
+}
+
+#btn_copiar {
+    color: #fff;
+    font-size: 1.1rem;
+    height: 60px;
+    width: 250px;
+    background: #385a64;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.30);
+    margin: 10px 5px;
+}
+
+#btn_copiar:hover {
+    background: #1a2e35;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
+/* _______________________________________________________ */
+
+
+.title {
+    color: #ff735c;
+    padding: 10px 80px;
+    font-size: 1.5rem;
+}
+
+textarea#input-text::placeholder {
+    text-align: center;
+}
+
+.campo_texto {
+    margin: 5px 10px;
+    padding: 10px;
+}
+
+#input-text {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 50vh;
+    resize: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.botones_principales {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#btn_encriptado,
+#btn_desencriptado {
+    color: #fff;
+    font-size: 1.1rem;
+    height: 60px;
+    width: 250px;
+    background: #ff5a41;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#btn_encriptado:hover,
+#btn_desencriptado:hover {
+    background: #fd2c0c;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.60);
+}
+
+footer {
+    background-color: #008B8B;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+  }
+  
+  .footer p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #1a2e35;
+    text-decoration: underline;
+    transition: 300ms;
+  }
+
+@media (max-width: 1270px) {
+
+    .header {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .title {
+        padding: 10px 5px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .contenedor_imagen {
+        margin-top: 30px;
+    }
+
+    .contenedor_imagen img {
+        display: none;
+    }
+
+    .botones_principales {
+        margin-bottom: 30px;
+    }
+
+    .contenedor_resultado {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    #input-text {
+        height: 30vh;
+        font-size: 1.7rem;
+    }
+}
+
+/**************************************************************/
+/*******************    PANTALLA CELULAR    *******************/
+/**************************************************************/
+
+@media (max-width: 767px) {
+
+    .header {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contenedor {
+        margin: 20px 0;
+    }
+
+    .title {
+        color: #ff735c;
+        padding: 10px 5px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .botones_principales {
+        margin: 20px 0 15px 0;
+    }
+
+    .contenedor_resultado {
+        padding: 10px;
+    }
+
+    #btn_encriptado,
+    #btn_desencriptado {
+        font-size: 1rem;
+        height: 50px;
+        width: 160px;
+    }
+
+    #input-text {
+        font-size: 1.3rem;
+    }
+
+    #btn_copiar {
+        font-size: 1rem;
+        height: 50px;
+        width: 180px;
+    }
+
+}
